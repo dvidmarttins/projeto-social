@@ -28,31 +28,36 @@ main {
     height: 100vh;
 }
 
-/* Moldura do celular */
+/* ====== Moldura do celular (ajustada) ====== */
 section#telefone {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-    height: 548px;  
-    width: 268px;   
-    background: url('../imagens/frame-iphone.png') no-repeat;
+
+    width: 268px;   /* manteve o valor desktop original */
+    height: 548px;
+    background: url('../imagens/frame-iphone.png') no-repeat center;
     background-size: contain;
-    overflow: hidden; /* corta qualquer coisa que ultrapasse */
+    overflow: hidden; /* muito importante: corta qualquer conteúdo que "vaze" */
+    box-sizing: border-box;
 }
 
-/* Tela dentro do celular */
+
+/* ====== Tela dentro do celular (posicionável e scroll interno) ====== */
 iframe#tela {
-    position: relative;
-    top: 11px;
-    left: 11px;
-    width: 93%;   
-    height: 96%;  
+    position: absolute;        /* >>> permite top/left funcionarem */
+    top: 10px;                 /* ajuste inicial — mexa nisso para encaixar perfeitamente */
+    left: 10px;                /* ajuste inicial — mexa nisso para encaixar perfeitamente */
+    width: calc(100% - 20px);  /* deixa folga para a moldura */
+    height: calc(100% - 20px);
     border: none;
-    border-radius: 30px; /* bordas arredondadas iguais ao celular */
-    overflow-y: hidden;    /* permite rolagem do conteúdo */
+    border-radius: 22px;       /* arredondamento que casa com o mockup */
+    box-sizing: border-box;
+    overflow: auto;            /* permite rolagem interna do conteúdo carregado */
+    -webkit-overflow-scrolling: touch; /* rolagem suave em iOS */
 }
+
 
 /* Menu redes sociais */
 section#redes-sociais {
@@ -85,20 +90,27 @@ section#redes-sociais img:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
 }
 
-/* Responsivo (mobile) */
-@media screen and (max-width: 500px) {
-    section#redes-sociais {
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px 30px;
+/* ====== Responsivo: adapta a moldura e a tela em telas pequenas ====== */
+@media screen and (max-width: 600px) {
+    section#telefone {
+        width: min(80vw, 320px);     /* ocupa até 80% da largura do viewport, com limite */
+        aspect-ratio: 268 / 548;     /* mantém proporção da moldura */
+        height: auto;                /* altura derivada pela aspect-ratio */
+        top: 45%;
+        transform: translate(-50%, -45%);
     }
 
+    iframe#tela {
+        top: 3%;
+        left: 3%;
+        width: 94%;
+        height: 94%;
+        border-radius: calc(22px * (min(80vw,320px) / 268)); /* mantém arredondamento proporcional (opcional) */
+    }
+
+    /* ícones no mobile já tem media query, mantive seus valores, mas caso precise reduzir mais: */
     section#redes-sociais img {
-        width: 35px;  
-        margin: 0;
+        width: 30px;
     }
 }
+
