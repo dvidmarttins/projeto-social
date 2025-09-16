@@ -86,7 +86,7 @@ section#redes-sociais img:hover {
 }
 
 /* Responsivo (mobile) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     section#redes-sociais {
         top: 10px;
         left: 50%;
