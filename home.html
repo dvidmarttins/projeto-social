@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    body {
-        width: 100vw;
-        height: 100vh;
-        background: url('imagens/tela-home.png') no-repeat top center;
-    }
-</style>
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        body {
+            background: #fff; /* fundo branco pra simular tela */
+        }
+
+        img {
+            display: block;
+            width: 100%;              /* ocupa toda a largura do celular */
+            height: auto;             /* mantém proporção */
+            border-radius: 30px;      /* arredonda todos os cantos */
+        }
+    </style>
 </head>
 <body>
-    
+    <img src="imagens/tela-home.png" alt="Home">
 </body>
 </html>
