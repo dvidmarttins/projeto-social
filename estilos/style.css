@@ -90,18 +90,18 @@ section#redes-sociais img:hover {
 
     body {
         background: url('../imagens/fundo-branco.png') no-repeat top center;
-        background-size: contain;   /* mantém a proporção sem cortar */
+        background-size: cover;   /* mantém a proporção sem cortar */
         background-attachment: scroll;
         background-color: black;    /* fallback */
     }
 
     section#telefone {
         position: absolute;
-        top: 50%;  
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 40%;  
+        left: 40%;
+        transform: translate(-40%, -40%);
 
-        width: 60vw;
+        width: 55vw;
         max-width: 280px;
         aspect-ratio: 268 / 548;
         background-size: contain;
