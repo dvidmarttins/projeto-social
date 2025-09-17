@@ -109,10 +109,10 @@ section#redes-sociais img:hover {
 
     iframe#tela {
         position: absolute;
-        top: 1%;
+        top: 3%;
         left: 4%;
-        width: 92%;
-        height: 92%;
+        width: 90%;
+        height: 90%;
         background: transparent;
         border: none;
         border-radius: 0px;
