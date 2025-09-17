@@ -104,13 +104,13 @@ section#redes-sociais img:hover {
         max-width: 280px;
         aspect-ratio: 268 / 548;
         background-size: contain;
-        border-radius: 5px;
+        border-radius: 0px;
         overflow: hidden; /* corta o que sair do mockup */
     }
 
     iframe#tela {
         position: absolute;
-        top: 7%;
+        top: 4%;
         left: 4%;
         width: 92%;
         height: 50%;
