@@ -99,7 +99,7 @@ section#redes-sociais img:hover {
         top: 45%;  /* menos que 50% → sobe um pouco */
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 60vw;
+        width: 45vw;
         max-width: 280px;
         aspect-ratio: 268 / 548;
         background-size: contain;
