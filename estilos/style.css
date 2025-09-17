@@ -118,6 +118,7 @@ section#redes-sociais img:hover {
         border: none;
         border-radius: 5px;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     /* Ícones redes sociais */
