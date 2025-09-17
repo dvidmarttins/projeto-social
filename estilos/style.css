@@ -97,23 +97,26 @@ section#redes-sociais img:hover {
 
     section#telefone {
         position: absolute;
-        top: 40%;  
-        left: 40%;
-        transform: translate(-40%, -40%);
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-        width: 55vw;
+        width: 60vw;
         max-width: 280px;
-        aspect-ratio: 268 / 548;
+        aspect-ratio: 268 / 548; /* mantém a proporção certinha */
         background-size: contain;
+        background-repeat: no-repeat;
     }
 
     iframe#tela {
-        top: 4%;
+        position: absolute;
+        top: 4%;      /* ajusta a posição relativa dentro do mockup */
         left: 4%;
-        width: 92%;
-        height: 92%;
+        width: 92%;   /* segue a largura certinha da tela interna */
+        height: 92%;  /* segue a altura proporcional */
+        max-height: calc(100% - 8%); /* garante que não passe da moldura */
         border-radius: 20px;
-    }
+        border: none;
 
     section#redes-sociais {
         position: fixed;
