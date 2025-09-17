@@ -86,19 +86,43 @@ section#redes-sociais img:hover {
 }
 
 /* Responsivo (mobile) */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+    section#telefone {
+        position: relative;
+        margin: 20px auto;
+        transform: none;
+        top: auto;
+        left: auto;
+
+        width: 60vw;              /* usa só 60% da tela */
+        max-width: 280px;         /* nunca passa disso */
+        aspect-ratio: 268 / 548;  /* mantém a proporção da moldura */
+        
+        background-size: contain;
+    }
+
+    iframe#tela {
+        top: 4%;
+        left: 4%;
+        width: 92%;
+        height: 92%;
+        border-radius: 20px;
+    }
+
     section#redes-sociais {
-        top: 10px;
+        position: fixed;
+        bottom: 15px;
         left: 50%;
+        top: auto;
         transform: translateX(-50%);
         flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        padding: 15px 30px;
+        gap: 8px;
+        padding: 8px 12px;
     }
 
     section#redes-sociais img {
-        width: 35px;  
+        width: 40px;
         margin: 0;
     }
 }
+
