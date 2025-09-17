@@ -89,8 +89,8 @@ section#redes-sociais img:hover {
 @media screen and (max-width: 768px) {
 
     body {
-        background: url('../imagens/fundo-branco.png') no-repeat top center;
-        background-size: auto;   /* mantém a proporção sem cortar */
+        background: url('../imagens/fundo-branco.png') no-repeat center center;
+        background-size: 50%;   /* mantém a proporção sem cortar */
         background-attachment: scroll;
         background-color: black;    /* fallback */
     }
