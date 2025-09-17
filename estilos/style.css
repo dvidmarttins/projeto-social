@@ -109,8 +109,8 @@ section#redes-sociais img:hover {
 
     iframe#tela {
         position: absolute;
-        top: 4%;
-        left: 4%;
+        top: 0%;
+        left: 0%;
         width: 92%;
         height: 92%;
         border: none;
