@@ -97,7 +97,7 @@ section#redes-sociais img:hover {
     /* Mockup */
     section#telefone {
         position: relative;
-        top: 50%;
+        top: 49%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 53vw;
@@ -110,7 +110,7 @@ section#redes-sociais img:hover {
 
     iframe#tela {
         position: absolute;
-        top: 0%;
+        top: 1%;
         left: 4%;
         width: 92%;
         height: 93%;
