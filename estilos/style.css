@@ -96,10 +96,10 @@ section#redes-sociais img:hover {
 
     /* Mockup: centralizado e mais acima */
     section#telefone {
-        top: 45%;  /* menos que 50% → sobe um pouco */
+        top: 50%;  /* menos que 50% → sobe um pouco */
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 45vw;
+        width: 50vw;
         max-width: 280px;
         aspect-ratio: 268 / 548;
         background-size: contain;
