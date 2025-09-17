@@ -96,16 +96,28 @@ section#redes-sociais img:hover {
 
     /* Mockup */
     section#telefone {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50vw;
-        max-width: 280px;
-        aspect-ratio: 268 / 548;
-        background-size: contain;
-        overflow: hidden; /* corta o que sair do mockup */
-    }
+    position: relative;
+    top: 50%;              /* mantém centralização */
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza horizontal e vertical */
+    
+    width: 50vw;
+    max-width: 280px;
+    aspect-ratio: 268 / 548;
+
+    /* máscara para recortar o iframe */
+    -webkit-mask: url('../imagens/frame-iphone.png') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('../imagens/frame-iphone.png') no-repeat center;
+    mask-size: contain;
+
+    background: url('../imagens/frame-iphone.png') no-repeat center;
+    background-size: contain;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
     iframe#tela {
         position: absolute;
