@@ -100,9 +100,9 @@ section#redes-sociais img:hover {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90vw;
+        width: 60vw;
         max-width: 280px;
-        aspect-ratio: 268 / 548;
+        aspect-ratio: 268 / 549;
         background-size: contain;
         border-radius: 10px;
         overflow: hidden; /* corta o que sair do mockup */
