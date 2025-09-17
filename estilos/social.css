@@ -11,7 +11,7 @@
         }
 
         body {
-            background: #fff; /* fundo branco para simular tela */
+            background: transparent; /* fundo branco para simular tela */
         }
 
         img {
