@@ -89,7 +89,7 @@ section#redes-sociais img:hover {
 @media (max-width: 768px) {
     /* Fundo */
     body {
-        background: url('../imagens/fundo-branco.png') no-repeat top center;
+        background: url('../imagens/fundo-branco-mobile.jpg') no-repeat top center;
         background-size: cover; /* cobre toda a tela */
         background-attachment: scroll; /* evita bug do fixed no celular */
     }
