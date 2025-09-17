@@ -90,18 +90,47 @@ section#redes-sociais img:hover {
     /* Fundo */
     body {
         background: url('../imagens/fundo-branco-mobile.jpg') no-repeat top center;
-        background-size: cover; /* cobre toda a tela */
-        background-attachment: scroll; /* evita bug do fixed no celular */
+        background-size: cover;
+        background-attachment: scroll;
     }
 
-    /* Mockup: centralizado e mais acima */
+    /* Mockup */
     section#telefone {
-        top: 50%;  /* menos que 50% → sobe um pouco */
+        position: relative;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 50vw;
         max-width: 280px;
         aspect-ratio: 268 / 548;
         background-size: contain;
+        overflow: hidden; /* corta o que sair do mockup */
+    }
+
+    iframe#tela {
+        position: absolute;
+        top: 4%;
+        left: 4%;
+        width: 92%;
+        height: 92%;
+        border: none;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Ícones redes sociais */
+    section#redes-sociais {
+        top: auto;              /* remove centralização vertical */
+        bottom: 20px;           /* fixa na parte de baixo */
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;    /* coloca lado a lado */
+        gap: 10px;
+        padding: 8px 12px;
+    }
+
+    section#redes-sociais img {
+        width: 40px;
+        margin: 0;
     }
 }
