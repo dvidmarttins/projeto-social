@@ -113,6 +113,7 @@ section#redes-sociais img:hover {
         left: 4%;
         width: 92%;
         height: 92%;
+        background: transparent;
         border: none;
         border-radius: 20px;
         box-sizing: border-box;
