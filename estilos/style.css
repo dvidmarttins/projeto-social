@@ -50,7 +50,7 @@ iframe#tela {
     width: 93%;   
     height: 96%;  
     border: none;
-    border-radius: 30px; /* bordas arredondadas iguais ao celular */
+    border-radius: 20px; /* bordas arredondadas iguais ao celular */
     overflow-y: hidden;    /* permite rolagem do conteúdo */
 }
 
