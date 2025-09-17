@@ -97,8 +97,9 @@ section#redes-sociais img:hover {
 
     section#telefone {
         position: absolute;
-        top: 40%;  
-        left: 40%;
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -72%);
 
         width: 55vw;
         max-width: 280px;
