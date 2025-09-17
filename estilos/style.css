@@ -104,7 +104,7 @@ section#redes-sociais img:hover {
         max-width: 280px;
         aspect-ratio: 268 / 548;
         background-size: contain;
-        border-radius: 35px;
+        border-radius: 25px;
         overflow: hidden; /* corta o que sair do mockup */
     }
 
@@ -116,7 +116,7 @@ section#redes-sociais img:hover {
         height: 98%;
         background: transparent;
         border: none;
-        border-radius: 35px;
+        border-radius: 25px;
         box-sizing: border-box;
     }
 
